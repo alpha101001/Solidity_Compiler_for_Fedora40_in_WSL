@@ -25,17 +25,17 @@ First, clone this repository to your local machine:
 ```bash
 git clone https://github.com/<your-username>/<your-repository-name>.git
 cd <your-repository-name>
-
+```
 2. Make the Script Executable
 Make the installation script executable:
-
+```bash
 chmod +x install_solidity_compiler.sh
-
+```
 3. Run the Script
 Execute the script to install Solidity:
-
+```bash
 ./install_solidity_compiler.sh
-
+```
 The script will handle everything from installing dependencies, cloning the Solidity repository, building the compiler, and verifying the installation.
 
 
@@ -57,19 +57,19 @@ Verifies Installation: After installation, the script verifies that solc is corr
 
 Example Output
 Upon successful execution, the script should output something like:
-
+```bash
 Verifying Solidity installation...
 solc, the Solidity compiler commandline interface
 Version: 0.8.21
 Solidity (solc) installation script has completed.
-
+```
 
 Customization
 Specify Solidity Version
 If you need to install a different version of Solidity, you can modify the SOLC_VERSION variable in the script:
-
+```bash
 SOLC_VERSION="v0.8.21"  # Change this to your desired version
-
+```
 
 Error Handling
 The script is designed to handle errors gracefully. If any step fails (e.g., cloning the repository or building the compiler), the script logs a warning and continues, ensuring that you don't have to intervene manually.
